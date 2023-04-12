@@ -20,7 +20,7 @@
   }
 
   section {
-    @apply h-screen p-4 pt-12
+    @apply h-screen p-4 pt-12 relative overflow-hidden
   }
 }
 

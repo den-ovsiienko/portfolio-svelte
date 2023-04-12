@@ -1,6 +1,9 @@
 <script lang="ts">
 	export let animateIcon: boolean = false;
-	export let rightIcon: string;
+	export let rightIcon: string | undefined;
+	const animationClass = animateIcon
+		? 'group-hover:rotate-45 inline-block transition-transform'
+		: '';
 	let restProps = { ...$$restProps };
 	let className = restProps.class;
 	delete restProps.class;
@@ -12,7 +15,7 @@
 	{...restProps}
 >
 	<slot />
-	{#if rightIcon.length > 0}
-		<div class="group-hover:rotate-45 inline-block transition-transform">{rightIcon}</div>
+	{#if rightIcon && rightIcon.length > 0}
+		<div class={animationClass}>{rightIcon}</div>
 	{/if}
 </button>
