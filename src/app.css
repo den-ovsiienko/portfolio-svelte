@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '/fonts/e-Ukraine-Light.woff2';
+@import '/fonts/e-Ukraine-Regular.woff2';
+@import '/fonts/e-Ukraine-Medium.woff2';
+@import '/fonts/e-UkraineHead-Light.woff2';
+@import '/fonts/e-UkraineHead-Regular.woff2';
+@import '/fonts/e-UkraineHead-Medium.woff2';
+@import '/fonts/e-Ukraine-Thin.woff2';
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    @apply font-eukraine font-light
+  }
+
+  section {
+    @apply h-screen p-4 pt-12
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-[68rem] mx-auto h-full
+  }
+}
