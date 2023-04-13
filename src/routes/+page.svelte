@@ -36,7 +36,7 @@
 					<HeroText />
 				</div>
 			</div>
-			<img class="" src="/images/avatar.svg" alt="Avatar" />
+			<img class="w-40 sm:w-72 xl:w-80" src="/images/avatar.svg" alt="Avatar" />
 		</div>
 	</div>
 	<!-- First section end -->
