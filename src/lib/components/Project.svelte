@@ -24,7 +24,7 @@
 		</div>
 	</div>
 	<div class="flex mt-4 justify-between">
-		<a href={url} target="_blank" class="font-normal group"
+		<a href={url} target="_blank" class=" group"
 			>Learn More <span class="group-hover:rotate-45 transition-transform">↗</span></a
 		>
 	</div>

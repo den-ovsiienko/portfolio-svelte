@@ -14,7 +14,7 @@ export default {
     extend: {
       fontFamily: {
         'eukraine': ['e-Ukraine', 'sans-serif'],
-        'eukrainehead': ['e-Ukraine Head', 'sans-serif'],
+        'eukrainehead': ['e-UkraineHead', 'sans-serif'],
       },
       backgroundImage: {
         'wave-yellow': 'url(/images/wave-yellow.svg)',

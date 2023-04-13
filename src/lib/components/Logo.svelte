@@ -1,3 +1,3 @@
-<div class="font-medium cursor-pointer hover:animate-shake">
+<div class="font-normal cursor-pointer hover:animate-shake">
   &lt; / &gt;
 </div>

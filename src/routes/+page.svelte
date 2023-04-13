@@ -70,17 +70,17 @@
 			</div>
 			<div class="h-5 w-1 relative">
 				<div class="h-full w-full bg-black rounded" />
-				<div class="absolute -top-7 left-0 w-max -translate-x-1/2 text-sm font-normal">Apr '22</div>
+				<div class="absolute -top-7 left-0 w-max -translate-x-1/2 text-sm ">Apr '22</div>
 			</div>
 			<div class="flex-1 h-1 rounded bg-black" />
 			<div class="h-5 w-1 relative">
 				<div class="h-full w-full bg-black rounded" />
-				<div class="absolute -top-7 left-0 w-max -translate-x-1/2 text-sm font-normal">Dec '21</div>
+				<div class="absolute -top-7 left-0 w-max -translate-x-1/2 text-sm ">Dec '21</div>
 			</div>
 			<div class="flex-1 h-1 rounded bg-black" />
 			<div class="h-5 w-1 relative">
 				<div class="h-full w-full bg-black rounded" />
-				<div class="absolute -top-7 left-0 w-max -translate-x-1/2 text-sm font-normal">Apr '21</div>
+				<div class="absolute -top-7 left-0 w-max -translate-x-1/2 text-sm ">Apr '21</div>
 			</div>
 		</div>
 		<!-- REFACTOR END -->
@@ -114,7 +114,7 @@
 		<div class="flex items-center w-full">
 			<div class="flex-1">
 				<SectionTitle>About Me</SectionTitle>
-				<p class="text-justify text-lg font-normal">
+				<p class="text-justify text-lg">
 					Hey there! I'm Denys Ovsiienko, a passionate guy in my last year at Simon Fraser
 					University, where I'm studying Computer Science. Over the past 2 years, I've been rocking
 					it as a part-time developer, and I'm all about solving problems and creating awesome
