@@ -1,18 +1,27 @@
 <script>
 	import Header from './Header.svelte';
 	import '../app.css';
+	let clientHeight = 0;
+	let scrollY = 0;
+	$: console.log(scrollY / clientHeight);
 </script>
+
+<svelte:window bind:scrollY />
 
 <div class="app">
 	<Header />
+	<div
+		class="fixed top-12 left-0 z-50 bg-black h-1 transition"
+		style:width={`${(scrollY / clientHeight) * 100}%`}
+	/>
 
-	<main>
-		<slot />
+	<main bind:clientHeight>
+		<slot scroll />
 	</main>
 
-	<footer>
+	<!-- <footer>
 		<p>Footer is here</p>
-	</footer>
+	</footer> -->
 </div>
 
 <style>

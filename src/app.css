@@ -16,16 +16,16 @@
   }
 
   html {
-    @apply font-eukraine font-light
+    @apply font-eukraine font-light scroll-smooth
   }
 
   section {
-    @apply h-screen p-4 pt-12 relative overflow-hidden
+    @apply min-h-screen p-8 pt-12 relative
   }
 }
 
 @layer components {
   .section-container {
-    @apply max-w-[68rem] mx-auto h-full
+    @apply max-w-[68rem] mx-auto h-full w-full
   }
 }

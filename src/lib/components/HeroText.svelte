@@ -24,7 +24,7 @@
 	}
 </script>
 
-<div class="bg-black text-white text-4xl w-[28rem]">
+<div class="bg-black text-white text-2xl sm:text-4xl w-full max-w-[28rem] lg:w-[28rem]">
 	<div class="h-16 w-full relative overflow-hidden text-center">
 		{#key currentIndex}
 			<span

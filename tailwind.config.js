@@ -18,7 +18,7 @@ export default {
       },
       backgroundImage: {
         'wave-yellow': 'url(/images/wave-yellow.svg)',
-        'wave-purple': 'url(/images/wave-yellow.svg)',
+        'wave-purple': 'url(/images/wave-purple.svg)',
       },
       spacing: {
         '1/2': '50vh',
@@ -30,6 +30,7 @@ export default {
         '1/8': '12.5vh',
         '1/9': '11.111111vh',
         '1/10': '10vh',
+        'screen': '100vh',
       },
       animation: {
         shake: 'shake 2s ease-in-out infinite',

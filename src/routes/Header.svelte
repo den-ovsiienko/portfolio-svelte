@@ -3,30 +3,24 @@
 	import Logo from '$lib/components/Logo.svelte';
 </script>
 
-<header class="flex justify-between fixed w-screen px-6 bg-white shadow-sm h-12 items-center z-50">
+<header class="flex justify-between fixed top-0 left-0 right-0 px-6 bg-white shadow-sm h-12 items-center z-50">
 	<Logo />
 
 	<nav class="hidden md:flex">
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
+				<a href="#">Home</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">About</a>
+				<a href="#about">About</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Work</a>
+				<a href="#work">Work</a>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/">Projects</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/">Contact</a>
+				<a href="#projects">Projects</a>
 			</li>
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
 	</nav>
 
 	<Logo />

@@ -17,12 +17,12 @@
 </script>
 
 {#if false}
-	<div class="bg-wave-yellow bg-wave-purple h-[198px] top-[198px]" />
+	<div class="bg-wave-yellow bg-wave-purple h-[198px] bottom-[198px] -top-[198px]" />
 {/if}
 
-<div class="absolute left-0 right-0 {flip ? `top-[${waveHeight}px]` : `bottom-0`}">
+<div class="absolute overflow-hidden pt-[25px] left-0 right-0 {flip ? `bottom-0` : `-top-[${waveHeight}px]`}">
 	<div class="relative w-full h-[{waveHeight}px]">
-		<div class={flip ? '-scale-100' : ''}>
+		<div class='{flip ? 'scale-100' : ''}'>
 			<div class="{animate ? 'wave' : 'wave-static'} bg-wave-{color}" />
       {#if animate}
         <div class="wave bg-wave-{color}" />
@@ -43,7 +43,6 @@
 		width: 6400px;
 		height: 198px;
 		animation: wave 30s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-		transform: translate3d(0, 0, 0);
 	}
 
   .wave-static {
@@ -51,7 +50,6 @@
 		top: 0;
 		width: 100%;
 		height: 198px;
-		transform: translate3d(0, 0, 0);
   }
 
 	.wave:nth-of-type(2) {
