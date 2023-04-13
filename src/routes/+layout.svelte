@@ -3,7 +3,6 @@
 	import '../app.css';
 	let clientHeight = 0;
 	let scrollY = 0;
-	$: console.log(scrollY / clientHeight);
 </script>
 
 <svelte:window bind:scrollY />

@@ -17,7 +17,6 @@
 	$: dashesArray = Array(Math.floor(timelineDashedWidth / (16 + 4)));
 	$: section = Math.floor(scroll / innerHeight) + 1;
 	$: projectsSectionMargin = workSectionHeight * 3 + 200;
-	$: console.log(bodyOffsetWidth);
 </script>
 
 <svelte:head>
@@ -28,8 +27,8 @@
 <svelte:window bind:scrollY={scroll} bind:innerHeight />
 <section class="fixed top-0 left-0 right-0 flex items-center">
 	<!-- First section start -->
-	<div class="section-container h-screen pt-1/10" style:display={section === 1 ? 'block' : 'none'}>
-		<div class="flex w-full justify-between items-center pt-4">
+	<div class="section-container h-screen lg:pt-1/10" style:display={section === 1 ? 'block' : 'none'}>
+		<div class="flex flex-col-reverse gap-10 lg:gap-0 lg:flex-row w-full justify-between items-center pt-4">
 			<div class="flex text-2xl sm:text-4xl flex-col gap-3">
 				<p class="">Hi 👋. My name is</p>
 				<h1 class="text-4xl sm:text-6xl font-bold font-eukrainehead">Denys Ovsiienko</h1>
@@ -38,7 +37,7 @@
 					<HeroText />
 				</div>
 			</div>
-			<img class="hidden md:block" src="/images/avatar.svg" alt="Avatar" />
+			<img class="" src="/images/avatar.svg" alt="Avatar" />
 		</div>
 	</div>
 	<!-- First section end -->
@@ -111,7 +110,7 @@
 <section id="about" class="bg-yellow flex items-center mt-screen">
 	<WaveNew color="yellow" showLearnMore animate />
 	<div class="section-container">
-		<div class="flex items-center w-full">
+		<div class="flex flex-col-reverse gap-12 lg:gap-0 lg:flex-row items-center w-full">
 			<div class="flex-1">
 				<SectionTitle>About Me</SectionTitle>
 				<p class="text-justify text-lg">
@@ -124,7 +123,7 @@
 					development and a contagious enthusiasm, I'm your go-to person!
 				</p>
 			</div>
-			<div class="flex-1 hidden md:flex justify-end">
+			<div class="flex-1 flex  justify-end">
 				<img src="/images/avatar-big.svg" alt="Avatar" />
 			</div>
 		</div>
