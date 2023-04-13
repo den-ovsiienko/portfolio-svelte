@@ -13,7 +13,6 @@
 	let innerHeight: number = 1;
 	let workSectionHeight: number = 0;
 	let timelineDashedWidth: number = 0;
-	let bodyOffsetWidth: number = 0;
 	$: dashesArray = Array(Math.floor(timelineDashedWidth / (16 + 4)));
 	$: section = Math.floor(scroll / innerHeight) + 1;
 	$: projectsSectionMargin = workSectionHeight * 3 + 200;
@@ -27,7 +26,7 @@
 <svelte:window bind:scrollY={scroll} bind:innerHeight />
 <section class="fixed top-0 left-0 right-0 flex items-center">
 	<!-- First section start -->
-	<div class="section-container h-screen lg:pt-1/10" style:display={section === 1 ? 'block' : 'none'}>
+	<div class="section-container h-screen lg:pt-1/10" style:display={section < 2 || isNaN(section) ? 'block' : 'none'}>
 		<div class="flex flex-col-reverse gap-10 lg:gap-0 lg:flex-row w-full justify-between items-center pt-4">
 			<div class="flex text-2xl sm:text-4xl flex-col gap-3">
 				<p class="">Hi 👋. My name is</p>
@@ -128,6 +127,7 @@
 			</div>
 		</div>
 	</div>
+	<WaveNew color="yellow" flip/>
 </section>
 <div id="work" />
 
@@ -159,12 +159,12 @@
 
 <section
 	id="projects"
-	class="flex bg-purple items-center"
+	class="flex bg-purple items-center !sm:mt-screen"
 	style:margin-top={`${
 		projectsSectionMargin > innerHeight ? innerHeight : projectsSectionMargin
 	}px`}
 >
-	<WaveNew color="purple" animate />
+	<WaveNew color="purple" />
 	<div class="section-container">
 		<SectionTitle>Some Things I’ve Built</SectionTitle>
 		<div class="grid grid-cols-1 lg:grid-cols-2 bg-black py-1 gap-1">

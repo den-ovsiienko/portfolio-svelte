@@ -20,12 +20,12 @@
 	<div class="bg-wave-yellow bg-wave-purple h-[198px] bottom-[198px] -top-[198px]" />
 {/if}
 
-<div class="absolute overflow-hidden pt-[25px] left-0 right-0 {flip ? `bottom-0` : `-top-[${waveHeight}px]`}">
-	<div class="relative w-full h-[{waveHeight}px]">
-		<div class='{flip ? 'scale-100' : ''}'>
-			<div class="{animate ? 'wave' : 'wave-static'} bg-wave-{color}" />
+<div class="absolute overflow-hidden left-0 right-0  {flip ? `bottom-0 translate-y-[100%] pb-[24px]` : `-top-[${waveHeight}px] pt-[24px]`}">
+	<div class=" w-full h-[{waveHeight}px]">
+		<div class='relative pt-0'>
+			<div class="{animate ? 'wave' : 'wave-static'} bg-wave-{color} " style:rotate={flip ? '180deg' : ''}/>
       {#if animate}
-        <div class="wave bg-wave-{color}" />
+			<div class="wave bg-wave-{color}" style:rotate={flip ? '180deg' : ''} />
       {/if}
 		</div>
 		<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
