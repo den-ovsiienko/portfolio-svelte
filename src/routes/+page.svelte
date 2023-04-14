@@ -26,14 +26,13 @@
 
 	// Animation
 	const [send, receive] = crossfade({
-		duration: (d) => Math.sqrt(d * 1000),
+		duration: (d) => Math.sqrt(d * 2000),
 
-		fallback(node, params) {
+		fallback: (node, params) => {
 			const style = getComputedStyle(node);
 			const transform = style.transform === 'none' ? '' : style.transform;
 
 			return {
-				duration: 600,
 				easing: quintOut,
 				css: (t) => `
 					transform: ${transform} scale(${t});
@@ -60,7 +59,7 @@
 	<div
 		on:keydown
 		on:click={() => (showLoading = false)}
-		out:fade
+		out:fade={{ duration: 1000}}
 		class="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50 bg-yellow"
 	>
 		<img
