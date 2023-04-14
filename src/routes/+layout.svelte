@@ -1,7 +1,7 @@
 <script>
 	import Header from './Header.svelte';
 	import '../app.css';
-	let clientHeight = 0;
+	let totalHeight = 0;
 	let scrollY = 0;
 </script>
 
@@ -11,11 +11,11 @@
 	<Header />
 	<div
 		class="fixed top-12 left-0 z-50 bg-black h-1 transition"
-		style:width={`${(scrollY / clientHeight) * 100}%`}
+		style:width={`${(scrollY / totalHeight) * 100}%`}
 	/>
 
-	<main bind:clientHeight>
-		<slot scroll />
+	<main bind:clientHeight={totalHeight}>
+		<slot />
 	</main>
 
 	<!-- <footer>

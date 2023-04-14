@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ArrowIcon from './ArrowIcon.svelte';
 	import Button from './Button.svelte';
 
 	export const waveHeight = 198;
@@ -30,7 +31,7 @@
 		</div>
 		<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
 			{#if showLearnMore}
-				<Button on:click={onLearnMore} animateIcon rightIcon="↘">Learn More</Button>
+			<Button on:click={onLearnMore} animateIcon>Learn More <ArrowIcon color='white' /> </Button>
 			{/if}
 		</div>
 	</div>

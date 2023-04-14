@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let animateIcon: boolean = false;
-	export let rightIcon: string | undefined;
+	export let rightIcon: string | undefined = undefined;
 	const animationClass = animateIcon
 		? 'group-hover:rotate-45 inline-block transition-transform'
 		: '';

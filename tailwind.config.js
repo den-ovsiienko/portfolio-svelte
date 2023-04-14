@@ -31,6 +31,7 @@ export default {
         '1/9': '11.111111vh',
         '1/10': '10vh',
         'screen': '100vh',
+        'screen-w': '100vw',
       },
       animation: {
         shake: 'shake 2s ease-in-out infinite',

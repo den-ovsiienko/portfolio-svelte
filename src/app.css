@@ -2,81 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '/fonts/e-Ukraine-Light.woff2';
-@import '/fonts/e-Ukraine-Regular.woff2';
-@import '/fonts/e-Ukraine-Medium.woff2';
-@import '/fonts/e-UkraineHead-Light.woff2';
-@import '/fonts/e-UkraineHead-Regular.woff2';
-@import '/fonts/e-UkraineHead-Medium.woff2';
-@import '/fonts/e-Ukraine-Thin.woff2';
-
 @layer base {
+	@font-face {
+		font-family: 'e-Ukraine';
+		font-style: normal;
+		font-weight: 300;
+		font-display: swap;
+		src: url('/fonts/e-Ukraine-Light.woff2') format('woff2');
+	}
 
-  @font-face {
-    font-family: 'e-Ukraine';
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-    src: url('/fonts/e-Ukraine-Light.woff2') format('woff2');
-  }
+	@font-face {
+		font-family: 'e-Ukraine';
+		font-style: normal;
+		font-weight: 400;
+		font-display: swap;
+		src: url('/fonts/e-Ukraine-Regular.woff2') format('woff2');
+	}
 
-  @font-face {
-    font-family: 'e-Ukraine';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('/fonts/e-Ukraine-Regular.woff2') format('woff2');
-  }
+	@font-face {
+		font-family: 'e-Ukraine';
+		font-style: normal;
+		font-weight: 500;
+		font-display: swap;
+		src: url('/fonts/e-Ukraine-Medium.woff2') format('woff2');
+	}
 
-  @font-face {
-    font-family: 'e-Ukraine';
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url('/fonts/e-Ukraine-Medium.woff2') format('woff2');
-  }
+	@font-face {
+		font-family: 'e-UkraineHead';
+		font-style: normal;
+		font-weight: 300;
+		font-display: swap;
+		src: url('/fonts/e-UkraineHead-Light.woff2') format('woff2');
+	}
 
-  @font-face {
-    font-family: 'e-UkraineHead';
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-    src: url('/fonts/e-UkraineHead-Light.woff2') format('woff2');
-  }
+	@font-face {
+		font-family: 'e-UkraineHead';
+		font-style: normal;
+		font-weight: 400;
+		font-display: swap;
+		src: url('/fonts/e-UkraineHead-Regular.woff2') format('woff2');
+	}
 
-  @font-face {
-    font-family: 'e-UkraineHead';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('/fonts/e-UkraineHead-Regular.woff2') format('woff2');
-  }
+	@font-face {
+		font-family: 'e-UkraineHead';
+		font-style: normal;
+		font-weight: 500;
+		font-display: swap;
+		src: url('/fonts/e-UkraineHead-Medium.woff2') format('woff2');
+	}
 
-  @font-face {
-    font-family: 'e-UkraineHead';
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url('/fonts/e-UkraineHead-Medium.woff2') format('woff2');
-  }
+	* {
+		box-sizing: border-box;
+	}
 
+	html {
+		@apply font-eukraine font-light scroll-smooth;
+	}
 
-
-  * {
-    box-sizing: border-box;
-  }
-
-  html {
-    @apply font-eukraine font-light scroll-smooth
-  }
-
-  section {
-    @apply min-h-screen p-8 pt-12 relative
-  }
+	section {
+		@apply min-h-screen p-8 pt-12 relative;
+	}
 }
 
 @layer components {
-  .section-container {
-    @apply max-w-[68rem] mx-auto h-full w-full
-  }
+	.section-container {
+		@apply max-w-[68rem] mx-auto h-full w-full;
+	}
 }

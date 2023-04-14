@@ -1,4 +1,6 @@
 <script lang="ts">
+	import ArrowIcon from './ArrowIcon.svelte';
+
 	export let name: string;
 	export let description: string;
 	export let url: string = '';
@@ -24,8 +26,6 @@
 		</div>
 	</div>
 	<div class="flex mt-4 justify-between">
-		<a href={url} target="_blank" class=" group"
-			>Learn More <span class="group-hover:rotate-45 transition-transform">↗</span></a
-		>
+		<a href={url} target="_blank" class="group">Learn More <ArrowIcon direction='ne' /></a>
 	</div>
 </div>
