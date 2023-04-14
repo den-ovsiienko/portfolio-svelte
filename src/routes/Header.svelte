@@ -8,17 +8,20 @@
 
 	<nav class="hidden md:flex">
 		<ul class="text-sm font-normal">
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+			<li>
 				<a href="#">Home</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+			<li>
 				<a href="#about">About</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+			<li>
 				<a href="#work">Work</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
+			<li>
 				<a href="#projects">Projects</a>
+			</li>
+			<li>
+				<a href="#contact">Contact</a>
 			</li>
 		</ul>
 	</nav>

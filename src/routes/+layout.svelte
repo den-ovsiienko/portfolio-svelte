@@ -3,15 +3,17 @@
 	import '../app.css';
 	let totalHeight = 0;
 	let scrollY = 0;
+	let innerHeight = 0;
 </script>
 
-<svelte:window bind:scrollY />
+<svelte:window bind:scrollY bind:innerHeight />
+
 
 <div class="app">
 	<Header />
 	<div
 		class="fixed top-12 left-0 z-50 bg-black h-1 transition"
-		style:width={`${(scrollY / totalHeight) * 100}%`}
+		style:width={`${(scrollY / (totalHeight + innerHeight)) * 100}%`}
 	/>
 
 	<main bind:clientHeight={totalHeight}>

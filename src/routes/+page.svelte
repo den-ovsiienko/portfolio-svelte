@@ -45,3 +45,4 @@
 <div id="work" class="-translate-y-4" />
 
 <ProjectsSection />
+<div id="contact" class="-translate-y-4" />
