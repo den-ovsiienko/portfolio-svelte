@@ -3,31 +3,22 @@
 	import Logo from '$lib/components/Logo.svelte';
 </script>
 
-<header class="flex justify-between fixed top-0 left-0 right-0 px-6 bg-white shadow-sm h-12 items-center z-50">
+<footer class="flex justify-between px-6 bg-white shadow-sm h-12 items-center z-50">
 	<Logo />
 
 	<nav class="hidden md:flex">
 		<ul class="text-sm font-normal">
 			<li>
-				<a href="/#">Home</a>
+				<a href="https://github.com/den-ovsiienko/portfolio-svelte" target="_blank">Github</a>
 			</li>
 			<li>
-				<a href="/#about">About</a>
-			</li>
-			<li>
-				<a href="/#work">Work</a>
-			</li>
-			<li>
-				<a href="/#projects">Projects</a>
-			</li>
-			<li>
-				<a href="/#contact">Contact</a>
+				<a href="/styleguide" target="_blank">Style guide</a>
 			</li>
 		</ul>
 	</nav>
 
 	<Logo />
-</header>
+</footer>
 
 <style>
 	nav {

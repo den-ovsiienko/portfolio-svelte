@@ -1,6 +1,7 @@
 <script>
 	import Header from './Header.svelte';
 	import '../app.css';
+	import Footer from './Footer.svelte';
 	let totalHeight = 0;
 	let scrollY = 0;
 	let innerHeight = 0;
@@ -20,23 +21,5 @@
 		<slot />
 	</main>
 
-	<!-- <footer>
-		<p>Footer is here</p>
-	</footer> -->
+	<Footer />
 </div>
-
-<style>
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
-</style>

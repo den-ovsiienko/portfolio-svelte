@@ -1,9 +1,4 @@
 <script lang="ts">
-	import HeroText from '$lib/components/HeroText.svelte';
-	import SectionTitle from '$lib/components/SectionTitle.svelte';
-	import WaveNew from '$lib/components/WaveNew.svelte';
-	import WorkExperience from '$lib/components/WorkExperience.svelte';
-	import Project from '$lib/components/Project.svelte';
 	import HeroSection from './HeroSection.svelte';
 	import WorkSection from './WorkSection.svelte';
 	import AboutMeSection from './AboutMeSection.svelte';
