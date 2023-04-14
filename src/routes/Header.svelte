@@ -1,15 +1,17 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
 	import Logo from '$lib/components/Logo.svelte';
 </script>
 
-<header class="flex justify-between fixed top-0 left-0 right-0 px-6 bg-white shadow-sm h-12 items-center z-50">
+<header
+	class="flex justify-between fixed top-0 left-0 right-0 px-6 bg-white shadow-sm h-12 items-center z-50"
+>
 	<Logo />
 
 	<nav class="hidden md:flex">
 		<ul class="text-sm font-normal">
 			<li>
-				<a href="/#">Home</a>
+				<a href="/">Home</a>
 			</li>
 			<li>
 				<a href="/#about">About</a>

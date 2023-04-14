@@ -59,6 +59,10 @@
 		@apply font-eukraine font-light scroll-smooth;
 	}
 
+  body {
+    @apply scroll-smooth;
+  }
+
 	section {
 		@apply min-h-screen p-8 pt-12 relative;
 	}

@@ -2,6 +2,7 @@
 	import Header from './Header.svelte';
 	import '../app.css';
 	import Footer from './Footer.svelte';
+	import { crossfade } from 'svelte/transition';
 	let totalHeight = 0;
 	let scrollY = 0;
 	let innerHeight = 0;
