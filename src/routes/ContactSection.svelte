@@ -12,8 +12,8 @@
 		<WorkExperience
 			class="flex-1"
 			color="green-light"
-			companyName="dovsiien@gmail.com"
-			url="mailto:dovsiien@gmail.com"
+			companyName="denys@ovsiien.co"
+			url="mailto:denys@ovsiien.co"
       iconType="email"
 		/>
 		<WorkExperience
